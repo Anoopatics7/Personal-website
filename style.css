@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:wght@200;400&family=Poppins:wght@300;500;700;900&family=Rubik+Moonrocks&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    text-decoration: none;
+}
+
+/*navbar stylings*/
+.navbar{
+    position:fixed;
+    width:100%;
+    padding:30px 0;
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+.navbar.sticky{
+     padding: 18px 0;
+     background: rgb(0, 0, 0);
+}
+.max-width{
+   
+    max-width: 1400px;
+    padding:0 50px;
+    margin: auto; 
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.navbar .logo a{
+    color:rgb(0, 229, 255);
+    font-size:45px;
+    font-weight: 600;
+    font-family: 'Bebas neue','sans-serif';
+}
+
+.navbar .logo a span{
+    color: rgb(255, 0, 0) ;
+}
+.navbar .sticky .logo a span{
+    color: rgb(255, 0, 0) ; 
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+    
+    
+}
+
+.navbar .menu li a{
+    color:red;
+    font-family: 'Kanit' ,'sans-serif';
+    font-size: 23px;
+    font-weight:500 ;
+    margin-left:  25px;
+    transition:color 0.2s ease;
+}
+.navbar .menu li a:hover{
+    color:  rgb(255, 0, 0);
+}
+
+.navbar.sticky .menu li a:hover{
+     color: rgb(255, 0, 0);
+}
+/*menu styling*/
+.menu-btn{
+    color: rgb(0, 229, 255);
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+.menu-btn:hover{
+    color: rgb(255, 0, 0);
+}
+.sticky .menu-btn:hover{
+    color: crimson;
+}
+
+/*Home section Styling*/
+.home{
+    display: flex;
+    background: url("images/back22.jpg") no-repeat center;
+    background-size: cover;
+    height:100vh;
+    color: rgb(0, 0, 0);
+    min-height: 600px;
+    padding: 10px 0 0 0;
+
+}
+
+.home .max-width{
+    margin: auto 0px auto 50px ;
+}
+
+.home .home-content .text-1{
+    color: rgb(0, 229, 255);
+    font-size: 27px;    
+}
+
+.home .home-content .text-2{
+    color: rgb(0, 229, 255);
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -4px;    
+}
+
+.home .home-content .text-3{
+    color: rgb(0, 229, 255);
+    font-size: 42px;
+    margin: 5px 0;    
+}
+.home .home-content .text-3 span{
+    color: rgb(255, 0, 0);
+    font-weight: 700;
+    font-size: 60px;
+    
+}
+
+.home .home-content a{
+    display: inline-block;
+    background: crimson;
+    color:  rgb(0, 229, 255);
+    padding:19px;
+    font-size: 23px;
+    margin-top: 18px;
+    border-radius: 5px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.home .home-content a:hover{
+    color:white ;
+    background-color: black;
+}
+
+
+/*about styling*/
+section{
+    padding: 100px 0;
+}
+.about{
+    font-family: 'poppins' , 'sans-serif';
+}
+
+.about .title{
+    font-family:'Bebas neue','sans-serif' ;
+    text-align: center;
+    font-size: 43px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 18px;
+    position: relative;
+
+}
+
+.about .title::before{
+    content: "";
+    position: absolute;
+    width: 140px;
+    height: 3px;
+    background: black;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.about .title::after{
+    content: "Anoopatics";
+    position: absolute;
+    height: 15px;
+    background: white;
+    bottom: -7px;
+    left: 50%;
+    font-size:20px ;
+    color: rgb(255,0 , 0) ;
+    transform: translateX(-50%);
+    padding: 5px;
+}
+.about .about-content .left img{
+    height: 420px;
+    width: 420px;
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) ;
+}
+.about .about-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about .about-content .left{
+    width: 47%;
+}
+.about .about-content .right{
+    width: 53%;
+}
+.about .about-content .right .text{
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 9px;
+}
+
+.about .about-content .right .text span{
+    color: red;
+}
+
+.about .about-content .right p{
+    text-align: justify;
+    word-spacing: 0px;
+    margin-bottom: 5px;
+}
+.Resume{
+    display: inline-block;
+    background: crimson;
+    color:  rgb(0, 229, 255);
+    padding:12px;
+    font-size: 19px;
+    margin-top: 18px;
+    border-radius: 5px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+.Resume:hover{
+    color: aliceblue;
+    background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*responsive media*/
+@media(max-width:1320px){
+    .home .max-width{
+        margin-left: 0px;
+    }
+}
+@media(max-width:1104px){
+    .about .about-content .left img{
+        height: 360px;
+        width: 360px;
+    }
+}
+@media(max-width:991px){
+    .max-width{
+        padding:0 50px;
+    }
+}
+
+@media(max-width:947px){
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    .home .home-content .text-2{
+        color: rgb(0, 229, 255);
+        font-size: 60px;
+    }
+    
+    .home .home-content .text-3{
+        color: rgb(0, 229, 255);
+        font-size: 33px;      
+    }
+    .about .about-content .column{
+         width: 50%;
+    }
+    .about .about-content .left{
+       display: flex;
+       justify-content:center ;
+       margin: 0 auto 60px;
+   }
+   .about .about-content .right {
+        flex: 100%;
+   }
+    .max-width{
+        max-width: 800px;
+    }
+}
+
+
+@media(max-width:690px){
+    .max-width{
+        padding:0 23px ;
+    }
+
+    .home .home-content .text-2{
+        color: rgb(0, 229, 255);
+        font-size: 50px;
+    }
+    
+    .home .home-content .text-3{
+        color: rgb(0, 229, 255);
+        font-size: 30px;      
+    }
+
+    .home .home-content a{
+        font-size: 20px;
+    }
+    
+}
+
+
+@media(max-width:500px){
+  
+    .home .home-content .text-2{
+        color: rgb(0, 229, 255);
+        font-size: 40px;
+    }
+    
+    .home .home-content .text-3{
+        color: rgb(0, 229, 255);
+        font-size: 28px;      
+    }
+   
+}
