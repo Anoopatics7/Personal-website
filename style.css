@@ -5,6 +5,35 @@
     box-sizing: border-box; 
     text-decoration: none;
 }
+html{
+    scroll-behavior: smooth;
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+section .title::after{
+    position: absolute;
+    height: 15px;
+    background: rgb(255, 255, 255);
+    bottom: -7px;
+    left: 50%;
+    font-size:20px ;
+    color: rgb(255,0 , 0) ;
+    transform: translateX(-50%);
+    padding: 5px;
+
+}
+section{
+    padding: 100px 0;
+}
 
 /*navbar stylings*/
 .navbar{
@@ -51,12 +80,13 @@
 }
 
 .navbar .menu li a{
-    color:red;
+    color: rgb(0, 229, 255);
     font-family: 'Kanit' ,'sans-serif';
     font-size: 23px;
     font-weight:500 ;
     margin-left:  25px;
     transition:color 0.2s ease;
+    display: block;
 }
 .navbar .menu li a:hover{
     color:  rgb(255, 0, 0);
@@ -82,7 +112,7 @@
 /*Home section Styling*/
 .home{
     display: flex;
-    background: url("images/back22.jpg") no-repeat center;
+    background: url("images/mono.jpg") no-repeat center;
     background-size: cover;
     height:100vh;
     color: rgb(0, 0, 0);
@@ -137,14 +167,12 @@
 
 
 /*about styling*/
-section{
-    padding: 100px 0;
-}
-.about{
+
+.about, .works , .social , .contact{
     font-family: 'poppins' , 'sans-serif';
 }
 
-.about .title{
+section .title{
     font-family:'Bebas neue','sans-serif' ;
     text-align: center;
     font-size: 43px;
@@ -155,29 +183,11 @@ section{
 
 }
 
-.about .title::before{
-    content: "";
-    position: absolute;
-    width: 140px;
-    height: 3px;
-    background: black;
-    bottom: 0px;
-    left: 50%;
-    transform: translateX(-50%);
-}
 
 .about .title::after{
     content: "Anoopatics";
-    position: absolute;
-    height: 15px;
-    background: white;
-    bottom: -7px;
-    left: 50%;
-    font-size:20px ;
-    color: rgb(255,0 , 0) ;
-    transform: translateX(-50%);
-    padding: 5px;
 }
+
 .about .about-content .left img{
     height: 420px;
     width: 420px;
@@ -185,7 +195,7 @@ section{
     border-radius: 30px;
     box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) ;
 }
-.about .about-content{
+.about .about-content , .works .works-content , .contact .contact-content{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -228,6 +238,244 @@ section{
     color: aliceblue;
     background-color: black;
 }
+
+/*Works sSection*/
+.works , .social{
+    color: aqua;
+    background: #111;
+}
+.works .title::before , .social .title::before{
+    background: aqua;
+}
+.works .title::after , .social .title::after{
+    background:black;
+    content: "Interested in";
+}
+.works .works-content .cards{
+    width: calc(33% - 20px);
+    background:rgb(49, 42, 42);
+    text-align: center;
+    padding: 20px 25px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.works .works-content .cards .box{
+    transition: all 0.3s ease;
+}
+.works .works-content .cards:hover .box{
+    transform: scale(1.10);
+}
+.works .works-content .cards:hover{
+    background-color: crimson;
+}
+
+.works .works-content .cards i{
+    font-size: 40px;
+    color: crimson;
+}
+.works .works-content .cards:hover i{
+    color:rgb(0, 229, 255);
+}
+
+.works .works-content .cards .text{
+    font-size: 23px;
+    font-weight: 500;
+    margin:10px 0 8px 0;
+}
+
+/*Social Section*/
+
+.social .title::after
+{
+    content: "visit me here";
+}
+.social .carousel  .card{
+    background:rgb(49, 42, 42);
+    padding: 27px 36px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.social .carousel  .card:hover{
+    background:crimson;
+}
+.social .carousel  .card .box{
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.social .carousel  .card:hover .box{
+    transform: scale(1.10);
+}
+.social .carousel  .card .box .text{
+    font-size: 24px;
+    font-weight: 500;
+    color: aliceblue;
+    margin: 10px 0 8px 0;
+}
+
+ 
+.social .carousel  .card img{
+    height: 140px;
+    width: 140px;
+    object-fit: cover;
+    border: 6px solid crimson;
+    border-radius: 50%;
+}
+.social .carousel  .card:hover img{
+    border: 5px outset aliceblue ;
+}
+
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 14px;
+    width: 14px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2.5px solid crimson !important;
+    margin: 0 5px;
+    transition: all 0.3s ease ;
+}
+
+.owl-dot.active{
+    width: 37px;
+    border-radius: 15px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: aqua !important; ;
+}
+
+
+/*Contact section styling*/
+
+.contact .title::after
+{
+    content: "Reach me here";
+}
+.contact .contact-content .header{
+    font-size: 23px;
+    font-weight: 700;
+    margin: 10px 0 10px 0;
+}
+
+.contact .contact-content .column{
+    width:calc(50% - 30px);
+}
+.contact .contact-content .left .header p {
+    text-align: justify;
+    font-size: 15px;
+
+}
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 67px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 20px;
+    color: #111;
+    font-size: 17px;
+}
+.contact .contact-content .row i{
+    font-size: 27px;
+    color: crimson;
+}
+.contact .contact-content .row .info .head{
+    font-weight: 600;
+}
+.contact .contact-content .row .info .head .text{
+    font-weight: 200;
+}
+.contact .right form .fields{
+    display: flex; 
+}
+.contact .right form .fields .field, .contact .right form .field{
+    height :45px;
+    width: 100%;
+    margin: 15px;
+    
+}
+.contact .right form .field input, .contact .right form  .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    border: 1.5px solid lightgray;
+    font-family: 'poppins' , 'sans-serif';
+}
+.contact .right form .name{
+    margin-right: 10px;
+}
+.contact .right form .tel{
+    margin-left: 10px;
+}
+.contact .right form  .textarea{
+    height: 100px;
+}
+.contact .right form  .textarea textarea{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    resize: none;
+}
+.contact .right form .button{
+    height:50px;
+    width: 100%;
+}
+.contact .right form .button button{
+    height:100%;
+    width: 120px;
+    border-radius: 6px;
+    background-color:crimson;
+    color: aqua;
+    font-family: 'poppins' , 'sans-serif';
+    font-size: 19px;
+    font-weight: 500;
+    border: 1px solidblack;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.contact .right form .button button:hover{
+    background: black;
+    border: 2px solid crimson;
+}
+.contact .right .text-head{
+    margin-left: 20px;
+    font-size: 20px;
+}
+/*footer section*/
+footer{
+    background-color: #111;
+    color: aqua;
+    display:block;
+    justify-content: center;
+    text-align: center;
+    font-size:25px;
+    padding: 20px 20px;
+    font-family: 'Bebas neue','sans-serif';
+    word-spacing: 2px;
+}
+
+footer span a{
+    color: crimson;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
 
 
 
@@ -315,6 +563,14 @@ section{
     .max-width{
         max-width: 800px;
     }
+    .works .works-content .cards{
+        width: calc(50%-25px);
+        margin: 20px;
+    }
+    .contact .contact-content .column{
+        width: 100%;
+        margin-bottom: 35px;
+    }
 }
 
 
@@ -335,6 +591,9 @@ section{
 
     .home .home-content a{
         font-size: 20px;
+    }
+    .works .works-content .cards{
+        width: 100%;
     }
     
 }

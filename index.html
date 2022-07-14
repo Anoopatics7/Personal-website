@@ -4,21 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anoopatics</title>
+    <link rel="shortcut icon" href="Images/sweety.jpg"  type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    
 </head>
 <body>
     <nav class="navbar">
         <div class="max-width">
             <div class="logo"><a href="#">Anoop<span>atics!</span></a></div>
-            <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Works</a></li>
-                <li><a href="#">Social</a></li>
-                <li><a href="#">Contact</a></li>
+            <ul class="menu"> 
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="#works" class="menu-btn">Works</a></li>
+                <li><a href="#social" class="menu-btn">Social</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
             </ul>
             <div class="menu-btn">
                 <i class="fa fa-bars"></i>
@@ -33,7 +38,7 @@
             <div class="home-content">
                 <div class="text-1">Hey there, I'm</div>
                 <div class="text-2">Anoopatics</div>
-                <div class="text-3">And I am a <span>Youtuber</span></div>
+                <div class="text-3">And I am a <span class="typing"></span></div>
                 <a href="#">Hire Me</a> 
             </div>
         </div>
@@ -47,7 +52,7 @@
                     <img src="Images\117344074_2675459736036119_551996346473471057_n.jpg">
                 </div>
                 <div class="column right">
-                    <div class="text">I'm Anoop and I am a <span>Youtuber</span></div>
+                    <div class="text">I'm Anoop and I am a <span class="typing-1">Youtuber</span></div>
                     <p> &nbsp;&nbsp;&nbsp;   Hola amigo , My name is Anoop M Yadawad AKA Anoopatics.
                         A computer science engineering student at the university of <a href="https://www.git.edu/" target="_blank">Gogte institute of Technology</a>  
                         I'm a front end web-developer and I am a python enthusiast. My hobbies are collecting coins , spending time with animals and travelling
@@ -57,9 +62,166 @@
             </div>
         </div>
     </section>
+    <!--Work section-->
+    <section class="works" id="works">
+        <div class="max-width">
+            <h2 class="title">My Works</h2>
+            <div class="works-content">
+                <div class="cards">
+                    <div class="box">
+                        <i class="fas fa-palette"></i>
+                        <div class="text">Web Design</div>
+                        <p>I like to do front-end web developing. science I can get exclusive ideas with colours and stuff and creating  websites</p>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="box">
+                        <i class="fas fa-video"></i>
+                        <div class="text">Content Creation</div>
+                        <p>I am innovative a try to create many types of content on the topics like gaming , coding ,animlas etc</p>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="box">
+                        <i class='fas fa-code'></i>
+                        <div class="text">Coding</div>
+                        <p>I Have the basic knowledge on java, C, python and Databases. Among these I love to code in python</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!--My Social media Section-->
+    <section class="social" id="social">
+        <div class="max-width">
+            <h2 class="title">My Social Media</h2>
+            <div class="carousel owl-carousel">            
+                <div class="card">                    
+                    <div class="box">
+                        <a href="https://www.youtube.com/channel/UC2ZqMMGER2SHEPeF7pfwVMg" target="_blank">
+                            <img src="images/youtube.avif">
+                            <div class="text">Youtube</div>
+                        </a>
+                        <p>The place i do gaming content and cool stuff</p>     
+                    </div>
+                </div>              
+                <div class="card">
+                    <div class="box">
+                        <a href="https://github.com/Anoopatics7" target="_blank">
+                            <img src="images/github.webp">
+                            <div class="text">Github</div>
+                        </a>
+                        <p>To store projects , contribute and get some help by my teammates</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <a href="https://www.linkedin.com/in/anoop-yadawad-b90725227/" target="_blank">
+                            <img src="images/linedin.avif" alt="">
+                            <div class="text">Linkedin</div>
+                        </a>
+                        <p>To showcase my talents and to look out for people to work with.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <a href="https://twitter.com/anupya__05" target="_blank">
+                            <img src="images/Twitter.avif">
+                            <div class="text">Twitter</div>
+                        </a>
+                        <p>Just to surf through random stuff and raise the voice if needed.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <a href="https://www.instagram.com/anoop_y7/" target="_blank">
+                            <img src="images/insta.avif" alt="">
+                            <div class="text">Instagram</div>
+                        </a>
+                        <p>To be in contact with my fellow friends and constantly share my life.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <a href="https://www.facebook.com/anoop.yadawad.9" target="_blank">
+                            <img src="images/facebook.webp" alt="">
+                            <div class="text">Facebook</div>
+                        </a>
+                        <p>The place i be the least . just a account to link to my games and stuff.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact Secton-->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="header">Get in Touch</div>
+                    <p>You can reach me through the below address or by just filling the below given form ! </p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fa fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="text">Anoop M Yadawad</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fa fa-home"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="text">Karnataka , india</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fa fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="text">anoopmy01@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="column right">
+                <div class="text-head">Approach me</div>
+                    <form action="#">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Name" required>
+                            </div>
+                            <div class="field tel">
+                                <input type="tel" placeholder="Phone Number" required>
+                            </div>
+                        </div>
+                            <div class="field email">
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                            <div class="field subject">
+                                <input type="text" placeholder="About" required>
+                            </div>
+                            <div class="field textarea">
+                                <textarea name="" id="" cols="30" rows="10" placeholder="message..." required></textarea>
+                            </div>
+                            <div class="button">
+                                <button type="submit">SEND</button>
+                            </div>
+                    </form>
+                </div>   
+            </div>
+        </div>
+    </section>
+
+    <!--Footer section-->
+    <footer>
+        <span>Created by <a href="#">Anoopatics</a>&nbsp&nbsp&nbsp&nbsp<span class="far fa-copyright"></span>&nbsp&nbsp&nbsp 2022 all rights reserved.</span>
+    </footer>
  
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure porro quam quo dolorem, expedita magni ab est explicabo eligendi saepe quos molestiae, odit optio. Veritatis aliquid magni sed tenetur. Eligendi a natus impedit voluptates temporibus similique, fugiat eius reiciendis, nobis nihil nostrum? Perferendis, excepturi. Eveniet consequuntur, hic sint aspernatur, error aliquam nisi voluptatem perferendis aut ipsa at! Dolores quo magnam veniam, qui, neque porro laudantium unde quasi exercitationem quae quidem eaque ipsam adipisci est, excepturi perspiciatis officiis impedit ratione reprehenderit consequatur. Consectetur odio dignissimos deleniti modi enim pariatur ratione fugit vel quidem molestiae expedita perferendis at unde, quisquam illum nemo. Corporis, placeat impedit nostrum repellat ex iure explicabo debitis laboriosam et officia dolorem facere vitae, enim architecto itaque quia ea iusto error culpa? Officiis, accusantium vero. Dolorum debitis illo, doloribus sit quisquam laudantium enim, inventore autem dolore quia perferendis assumenda aspernatur et deserunt sed nihil qui voluptatem nulla voluptas optio architecto veniam earum dignissimos. At est aperiam officia, itaque adipisci vel blanditiis doloribus, natus et nulla molestias ab vitae. Est doloribus blanditiis totam ullam quis sit corrupti eum dignissimos inventore nobis. Magni quod tenetur eveniet sed? Corporis ab illum vel? Veniam quo voluptate animi, inventore nobis dolorum voluptatibus optio repellat consequatur quam. Amet expedita eligendi ducimus explicabo enim, inventore fugiat consectetur repudiandae distinctio animi veritatis sed fugit minima aliquid possimus nam ratione omnis sint provident dolorem a. Similique rem quo aliquam excepturi nobis. Sequi porro debitis et dignissimos asperiores error, cumque qui velit dolorum possimus soluta excepturi, nesciunt sapiente tenetur quia ad id iure exercitationem illo, vero perspiciatis eveniet rem eligendi? Assumenda omnis dolore id, voluptate esse voluptatum debitis beatae dolorem vitae. Voluptatem consequatur dolore error accusamus voluptas hic sed officiis odit nulla pariatur saepe eius iusto nisi quos neque molestiae harum amet similique, accusantium ipsam corrupti, impedit nihil totam.</p>
+    
     <script src="script.js"></script>
 </body>
-</html>
+</html> 
