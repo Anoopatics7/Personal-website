@@ -16,17 +16,12 @@ $(document).ready(function(){
     
     //typing animation
     var typed = new Typed(".typing", {
-        strings: ["YouTuber", "Animal Person" , "Developer"],
+        strings: ["YouTuber", "Developer", "Blogger"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
-    var typed = new Typed(".typing-1", {
-        strings: ["YouTuber", "Animal Person" , "Developer"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
+
 
     //Owl carousel script
     $('.carousel').owlCarousel({
